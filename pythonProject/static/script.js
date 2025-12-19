@@ -18,7 +18,7 @@ function show() {
 
   document.getElementById("term").innerText = cards[index].term;
   document.getElementById("meaning").innerText = cards[index].meaning; // always show
-  document.getElementById("explanation").innerText = current.explanation || "";
+  document.getElementById("explanation").innerText = cards[index].explanation;
   document.getElementById("progress").innerText = `${index + 1} / ${cards.length}`;
 
   // small animation
