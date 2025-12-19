@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocab Flashcards</title>
+  <!-- Use url_for to link static files -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+</head>
+<body>
+
+<div id="app">
+  <div id="progress">1 / 123</div>
+
+  <div id="card">
+    <div id="term"></div>
+    <div id="meaning"></div>
+    <div id="explanation"></div>
+  </div>
+
+  <div id="hint">⬅ Swipe | Tap to flip | ➡</div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
